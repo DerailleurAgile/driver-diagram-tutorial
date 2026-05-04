@@ -1,0 +1,101 @@
+{
+  "aim": "Increase students earning college math credit within one year from 5% to 50%",
+  "primaryDrivers": [
+    {
+      "id": "pd1",
+      "label": "Instructional systems",
+      "sub": "Year-long pathway around college-level content",
+      "secondaryDrivers": [
+        {
+          "id": "sd1",
+          "label": "Reduce transitions and sustain enrollment across semesters",
+          "changeIdeas": [
+            {
+              "id": "ci1",
+              "label": "Opening lessons engage interest and assure early success"
+            },
+            {
+              "id": "ci2",
+              "label": "Direct interventions to influence student mindsets"
+            }
+          ]
+        },
+        {
+          "id": "sd2",
+          "label": "Deliberate focus on “starting strong”",
+          "changeIdeas": [
+            {
+              "id": "ci3",
+              "label": "Real-time tracking data for possible student disengagement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pd2",
+      "label": "Productive persistence",
+      "sub": "Students persist through challenges using effective strategies",
+      "secondaryDrivers": [
+        {
+          "id": "sd3",
+          "label": "Promote students' ties to peers, faculty, and pathway",
+          "changeIdeas": [
+            {
+              "id": "ci4",
+              "label": "Week 1 activities to establish supportive classroom connections"
+            },
+            {
+              "id": "ci5",
+              "label": "Develop supportive classroom norms for productive struggle"
+            }
+          ]
+        },
+        {
+          "id": "sd4",
+          "label": "Create math that matters: course material students see as valuable",
+          "changeIdeas": [
+            {
+              "id": "ci6",
+              "label": "Professional development on “starting strong”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pd3",
+      "label": "Language and literacy",
+      "sub": "Students can understand problems, reason mathematically, communicate results",
+      "secondaryDrivers": [
+        {
+          "id": "sd5",
+          "label": "Enhance faculty skills and beliefs regarding student engagement",
+          "changeIdeas": [
+            {
+              "id": "ci7",
+              "label": "Faculty learning communities focused on student thinking"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pd4",
+      "label": "Advancing teaching",
+      "sub": "Implement effective teaching within two years of pathway adoption",
+      "secondaryDrivers": [
+        {
+          "id": "sd6",
+          "label": "Build shared instructional practices across the network",
+          "changeIdeas": [
+            {
+              "id": "ci8",
+              "label": "Structured lesson study cycles using network protocols"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

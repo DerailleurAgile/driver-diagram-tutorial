@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Driver Diagram — Improvement Science Learning Aid</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Diagram — Improvement Science Learning Aid</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -42,7 +42,7 @@
 
   <div class="diagram-wrap">
     <div class="diagram-canvas" id="learn-canvas">
-      <div class="col-headers" id="learn-headers" style="padding-left:0;">
+      <div class="col-headers">
         <div class="col-header" style="width:130px">Aim</div>
         <div class="col-header" style="width:56px"></div>
         <div class="col-header" style="width:180px">Primary drivers</div>
@@ -51,9 +51,7 @@
         <div class="col-header" style="width:56px"></div>
         <div class="col-header" style="width:180px">Change ideas</div>
       </div>
-      <div class="diagram-body" id="learn-body">
-        <!-- rendered by JS -->
-      </div>
+      <div class="diagram-body" id="learn-body"><!-- rendered by JS --></div>
       <svg class="arrow-svg" id="learn-arrows" xmlns="http://www.w3.org/2000/svg"></svg>
     </div>
   </div>
@@ -65,7 +63,9 @@
     <button class="btn" onclick="loadExample()">Load example</button>
     <button class="btn" onclick="loadBlank()">Start blank</button>
     <div class="divider"></div>
-    <span style="font-size:12px;color:var(--muted)">Click any node to edit. Hover for controls.</span>
+    <span style="font-size:12px;color:var(--muted)">
+      Click any node to edit its text. Use <strong>Links to →</strong> on each node to set its connection. Hover nodes for delete controls.
+    </span>
   </div>
 
   <div class="diagram-wrap">
@@ -79,9 +79,7 @@
         <div class="col-header" style="width:56px"></div>
         <div class="col-header" style="width:180px">Change ideas</div>
       </div>
-      <div class="diagram-body" id="build-body">
-        <!-- rendered by JS -->
-      </div>
+      <div class="diagram-body" id="build-body"><!-- rendered by JS --></div>
       <svg class="arrow-svg" id="build-arrows" xmlns="http://www.w3.org/2000/svg"></svg>
     </div>
   </div>

@@ -41,9 +41,24 @@ header {
 
 .header-top {
   display: flex;
-  align-items: baseline;
-  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
   margin-bottom: 4px;
+}
+
+.deming-headshot {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+
+.dd-headshot-logo {
+  height: 100px;
+  object-fit: contain;
 }
 
 h1 {

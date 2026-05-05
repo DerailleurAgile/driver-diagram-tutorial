@@ -122,19 +122,19 @@ const STEPS = [
   },
   {
     title: "Step 1 — The Aim",
-    text: "The Aim anchors the entire diagram. A good aim is precise: it names <em>what</em>, <em>how much</em>, <em>for whom</em>, and <em>by when</em>. Vague aims produce vague theories. Notice that 5% \u2192 50% is a specific, measurable commitment — not aspirational language."
+    text: "The <strong>Aim</strong> anchors the entire diagram. A good aim is precise: it names <em>what</em>, <em>how much</em>, <em>for whom</em>, and <em>by when</em>. Vague aims produce vague theories. Notice that 5% \u2192 50% is a specific, measurable commitment, not aspirational language."
   },
   {
     title: "Step 2 — Primary Drivers",
-    text: "Primary drivers are the major system conditions that, if changed, would move the aim. They are <em>not</em> activities — they name the state of the system you need to change. The team identified four: the design of instruction, student persistence, language skills, and teaching practice."
+    text: "<strong>Primary drivers</strong> are the major system conditions that, if changed, would move toward the AIM. They are <em>not</em> activities: they name the state of the system you need to change. The team identified four: the design of instruction, student persistence, language skills, and teaching practice."
   },
   {
     title: "Step 3 — Secondary Drivers",
-    text: "Secondary drivers make primary drivers actionable. Each one belongs to a single primary driver and names a more specific condition to change. Together they form a <em>nested theory</em>: if these secondary conditions improve, the primary driver improves, and the aim moves."
+    text: "<strong>Secondary drivers</strong> make primary drivers actionable. Each one belongs to a single primary driver and names a more specific condition to change. Together they form a <em>nested theory</em>: if these secondary conditions improve, the primary driver improves, and the system moves toward the AIM."
   },
   {
     title: "Step 4 — Change Ideas",
-    text: "Change ideas are concrete, testable interventions. Each feeds a PDSA cycle: Plan (predict the change), Do (try it small), Study (compare prediction to result), Act (adapt). The diagram shows where each idea sits in the theory — so you know exactly what you are testing and why."
+    text: "<strong>Change ideas</strong> are concrete, testable interventions that we use to build knowledge about what it takes to improve the system. Each feeds a <strong>PDSA cycle:</strong> Plan (predict the change), Do (try it small), Study (compare prediction to result), Act (iterate/adapt/abandon in response to what's learned). The diagram shows where each idea sits in the theory, so you know exactly what you are testing and why."
   },
   {
     title: "Step 5 — The full theory",
@@ -280,7 +280,7 @@ function renderBuild() {
       <div contenteditable="true" spellcheck="false"
            oninput="buildState.secondaryDrivers[${si}].label = this.innerText; refreshLinkSelects(); scheduleBuildArrows()"
            >${escHtml(sd.label)}</div>
-      <span class="node-link-label">Links to \u2192</span>
+      <span class="node-link-label">\u2190 Links to</span>
       <select class="node-link-select" onchange="linkSD('${sd.id}', this.value)">
         <option value="">— unlinked —</option>
         ${pdOptions}

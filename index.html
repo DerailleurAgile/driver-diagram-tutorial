@@ -10,7 +10,9 @@
 
 <header>
   <div class="header-top">
-    <img src="dd_headshot_logo_blended.png" alt="Driver Diagram logo" class="dd-headshot-logo">
+    <a href="https://digestibledeming.substack.com/" target="_blank" rel="noopener noreferrer">
+      <img src="dd_headshot_logo_blended.png" alt="Driver Diagram logo" class="dd-headshot-logo">
+    </a>
     <h1>Driver Diagram Tutorial</h1>
     <span class="subtitle">What it is and how to use it</span>
   </div>
@@ -22,39 +24,50 @@
 
 <!-- ═══════════════════════════ LEARN PANEL ═══════════════════════════ -->
 <div id="learn-panel" class="panel active">
-  <div class="learn-intro">
-    <p>A <strong>Driver Diagram</strong> is a structured map of your theory of improvement — before you act on it. It shows what you believe needs to change in a system, and why, in a form that a whole team can see, challenge, and test.</p>
-    <p>It is not a plan. It is a set of hypotheses. Every arrow is a claim: <em>if we change this, we expect that to improve.</em> The diagram makes those claims explicit so they can be examined — and so that PDSA cycles can test them.</p>
-    <div class="deming-note">
-      <strong>Deming connection:</strong> Deming's Theory of Knowledge holds that action without theory is blind — you cannot learn from results unless you first predicted them. A Driver Diagram operationalises this: it externalises the team's working theory so that data can speak to it. It is System of Profound Knowledge made visible.
-    </div>
-  </div>
+  <div class="learn-layout">
 
-  <div class="step-description" id="step-desc">
-    <h3>The worked example</h3>
-    <p>We will build a Driver Diagram together, using a real example from <em>Learning to Improve</em> (Bryk et al., 2015). The problem: in community colleges across the United States, only 5% of students placed into developmental mathematics earned college-level math credit within one year. Step through the diagram to see how an improvement team structured their theory of change.</p>
-  </div>
-
-  <div class="step-controls">
-    <button class="btn" id="prev-btn" onclick="prevStep()" disabled>← Previous</button>
-    <button class="btn btn-primary" id="next-btn" onclick="nextStep()">Next →</button>
-    <span class="step-label" id="step-label">Step 0 of 5</span>
-  </div>
-
-  <div class="diagram-wrap">
-    <div class="diagram-canvas" id="learn-canvas">
-      <div class="col-headers">
-        <div class="col-header" style="width:130px">Aim</div>
-        <div class="col-header" style="width:56px"></div>
-        <div class="col-header" style="width:180px">Primary drivers</div>
-        <div class="col-header" style="width:56px"></div>
-        <div class="col-header" style="width:180px">Secondary drivers</div>
-        <div class="col-header" style="width:56px"></div>
-        <div class="col-header" style="width:180px">Change ideas</div>
+    <!-- Left column: text and controls -->
+    <div class="learn-sidebar">
+      <div class="learn-intro">
+        <p>A <strong>Driver Diagram</strong> is a structured map of your <em>theory of improvement.</em> It shows what you believe needs to change in a system, and why, in a form that a whole team can see, challenge, and test.</p>
+        <p><strong>It is not a plan.</strong> It is a set of hypotheses. Every arrow is a claim: <em>if we change this, we expect that to improve.</em> The diagram makes those claims explicit so they can be examined — and so that PDSA cycles can test them.</p>
+        <div class="deming-note">
+          <strong>Deming connection:</strong> In The New Economics, Dr. Deming teaches that <em>"Theory is a window into the world. Theory leads to prediction. Without prediction, experience and examples teach nothing."</em> A Driver Diagram is a way to make your predictions about an improvement visible and testable, with the benefit of creating knowledge.
+        </div>
       </div>
-      <div class="diagram-body" id="learn-body"><!-- rendered by JS --></div>
-      <svg class="arrow-svg" id="learn-arrows" xmlns="http://www.w3.org/2000/svg"></svg>
+
+      
     </div>
+
+    <!-- Right column: diagram -->
+    <div class="learn-diagram-col">
+      <div class="diagram-wrap">
+        <div class="diagram-canvas" id="learn-canvas">
+          <div class="col-headers">
+            <div class="col-header" style="width:130px">Aim</div>
+            <div class="col-header" style="width:56px"></div>
+            <div class="col-header" style="width:180px">Primary drivers</div>
+            <div class="col-header" style="width:56px"></div>
+            <div class="col-header" style="width:180px">Secondary drivers</div>
+            <div class="col-header" style="width:56px"></div>
+            <div class="col-header" style="width:180px">Change ideas</div>
+          </div>
+          <div class="diagram-body" id="learn-body"><!-- rendered by JS --></div>
+          <svg class="arrow-svg" id="learn-arrows" xmlns="http://www.w3.org/2000/svg"></svg>
+          <div class="step-description" id="step-desc">
+            <h3>The worked example</h3>
+            <p>We will build a Driver Diagram together, using a real example from <em>Learning to Improve</em> (Bryk et al., 2015). The problem: in community colleges across the United States, only 5% of students placed into developmental mathematics earned college-level math credit within one year. Step through the diagram to see how an improvement team structured their theory of change.</p>
+          </div>
+
+          <div class="step-controls">
+            <button class="btn" id="prev-btn" onclick="prevStep()" disabled>← Previous</button>
+            <button class="btn btn-primary" id="next-btn" onclick="nextStep()">Next →</button>
+            <span class="step-label" id="step-label">Step 0 of 5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -95,5 +108,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="script.js"></script>
+
+<footer class="site-footer">
+  &copy; 2026 - The Digestible Deming
+</footer>
+
 </body>
 </html>

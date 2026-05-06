@@ -305,7 +305,7 @@ function renderBuild() {
       <div contenteditable="true" spellcheck="false"
            oninput="buildState.changeIdeas[${cii}].label = this.innerText; refreshLinkSelects(); scheduleBuildArrows()"
            >${escHtml(ci.label)}</div>
-      <span class="node-link-label">Links to \u2192</span>
+      <span class="node-link-label">\u2190 Links to</span>
       <select class="node-link-select" onchange="linkCI('${ci.id}', this.value)">
         <option value="">— unlinked —</option>
         ${sdOptions}

@@ -118,7 +118,7 @@ let currentStep = 0;
 const STEPS = [
   {
     title: "The worked example",
-    text: "We will build a Driver Diagram using a real example from <em>Learning to Improve</em> (Bryk et al., 2015). The problem: in community colleges, only 5% of developmental math students earned college-level math credit within one year. Step through to see how an improvement team mapped their theory of change."
+    text: "We will build a Driver Diagram using a real example from <a href='https://www.amazon.ca/Learning-Improve-Americas-Schools-Getting-ebook/dp/B07WZGMG5M/ref=tmm_kin_swatch_0?_encoding=UTF8&sr=8-1' target='_blank'><em>Learning to Improve</em></a> (Bryk et al., 2015). The problem: in community colleges, only 5% of developmental math students earned college-level math credit within one year. Step through to see how an improvement team mapped their theory of change."
   },
   {
     title: "Step 1 — The Aim",
